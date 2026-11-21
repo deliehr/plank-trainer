@@ -29,19 +29,11 @@
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		20E9C3EDE5E48F7AC66DEE7D /* Planktrainer */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			explicitFileTypes = {
-			};
-			explicitFolders = (
-			);
 			path = Planktrainer;
 			sourceTree = "<group>";
 		};
 		952AC5B2B57E2AC121CE8C2D /* PlanktrainerTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			explicitFileTypes = {
-			};
-			explicitFolders = (
-			);
 			path = PlanktrainerTests;
 			sourceTree = "<group>";
 		};
