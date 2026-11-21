@@ -1,12 +1,12 @@
 import AVFAudio
 
-protocol AudioSessionControlling: AnyObject {
+nonisolated protocol AudioSessionControlling: Sendable {
     func configureForAnnouncements() throws
     func activate() throws
     func deactivate() throws
 }
 
-final class AudioSessionController: AudioSessionControlling {
+nonisolated final class AudioSessionController: AudioSessionControlling {
     init() {}
 
     func configureForAnnouncements() throws {

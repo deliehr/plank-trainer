@@ -1,28 +1,60 @@
 import Foundation
+import Synchronization
 import Testing
 @testable import Planktrainer
 
-final class FakeAudioSession: AudioSessionControlling {
+nonisolated final class FakeAudioSession: AudioSessionControlling {
     struct Failure: Error {}
 
-    var failsConfigure = false
-    var failsActivate = false
-    private(set) var configureCalls = 0
-    private(set) var activateCalls = 0
-    private(set) var deactivateCalls = 0
+    private struct State {
+        var failsConfigure = false
+        var failsActivate = false
+        var configureCalls = 0
+        var activateCalls = 0
+        var deactivateCalls = 0
+    }
+
+    private let state = Mutex(State())
+
+    var failsConfigure: Bool {
+        get { state.withLock { $0.failsConfigure } }
+        set { state.withLock { $0.failsConfigure = newValue } }
+    }
+
+    var failsActivate: Bool {
+        get { state.withLock { $0.failsActivate } }
+        set { state.withLock { $0.failsActivate = newValue } }
+    }
+
+    var configureCalls: Int { state.withLock { $0.configureCalls } }
+    var activateCalls: Int { state.withLock { $0.activateCalls } }
+    var deactivateCalls: Int { state.withLock { $0.deactivateCalls } }
 
     func configureForAnnouncements() throws {
-        configureCalls += 1
-        if failsConfigure { throw Failure() }
+        let fails = state.withLock { state in
+            state.configureCalls += 1
+            return state.failsConfigure
+        }
+        if fails { throw Failure() }
     }
 
     func activate() throws {
-        activateCalls += 1
-        if failsActivate { throw Failure() }
+        let fails = state.withLock { state in
+            state.activateCalls += 1
+            return state.failsActivate
+        }
+        if fails { throw Failure() }
     }
 
     func deactivate() throws {
-        deactivateCalls += 1
+        state.withLock { $0.deactivateCalls += 1 }
+    }
+}
+
+private func waitUntil(timeout: Duration = .seconds(3), _ condition: () -> Bool) async throws {
+    let deadline = ContinuousClock.now + timeout
+    while !condition(), ContinuousClock.now < deadline {
+        try await Task.sleep(for: .milliseconds(10))
     }
 }
 
@@ -36,14 +68,31 @@ final class FakeAudioSession: AudioSessionControlling {
         #expect(session.configureCalls == 1)
     }
 
-    @Test func speakThrowsUnavailableWhenActivationFails() {
+    @Test func speakThrowsUnavailableAfterActivationFailed() async throws {
         let session = FakeAudioSession()
         session.failsActivate = true
         let announcer = SpeechAnnouncer(audioSession: session, locale: Locale(identifier: "en"))
 
+        try announcer.speak("Hello")
+        try await waitUntil { announcer.isUnavailable }
+
         #expect(throws: AnnouncerError.unavailable) { try announcer.speak("Hello") }
-        #expect(session.activateCalls == 1)
         #expect(session.deactivateCalls == 0)
+    }
+
+    @Test func speakSucceedsAgainAfterActivationRecovers() async throws {
+        let session = FakeAudioSession()
+        session.failsActivate = true
+        let announcer = SpeechAnnouncer(audioSession: session, locale: Locale(identifier: "en"))
+        try announcer.speak("Hello")
+        try await waitUntil { announcer.isUnavailable }
+
+        session.failsActivate = false
+        #expect(throws: AnnouncerError.unavailable) { try announcer.speak("Hello") }
+        try await waitUntil { !announcer.isUnavailable }
+
+        #expect(session.activateCalls == 2)
+        #expect(throws: Never.self) { try announcer.speak("Hello") }
     }
 
     @Test func stopSpeakingWithoutOutputHasNoEffect() {
