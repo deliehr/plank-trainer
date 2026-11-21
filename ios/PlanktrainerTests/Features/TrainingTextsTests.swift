@@ -7,6 +7,8 @@ import Testing
         "training.title",
         "training.summary.record %@",
         "training.summary.last %@ %@",
+        "training.summary.empty",
+        "training.summary.emptyHint",
         "training.sessionTime.header",
         "training.minutes",
         "training.seconds",

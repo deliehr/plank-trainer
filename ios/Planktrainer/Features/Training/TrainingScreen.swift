@@ -51,41 +51,61 @@ struct TrainingScreen: View {
         .onChange(of: preparation) { _, _ in normalize() }
     }
 
-    @ViewBuilder private var summarySection: some View {
+    private var summarySection: some View {
         let summary = SessionHistorySummary(sessions: sessions)
-        if summary.recordSeconds != nil || summary.lastSession != nil {
-            Section {
-                if let record = summary.recordSeconds {
-                    Label {
+        return Section {
+            let layout = dynamicTypeSize.isAccessibilitySize
+                ? AnyLayout(VStackLayout(alignment: .leading, spacing: ThemeSpacing.m))
+                : AnyLayout(HStackLayout(spacing: ThemeSpacing.m))
+            layout {
+                ProgressRing(fraction: ringFraction(summary), style: .mini, state: ringState(summary))
+                VStack(alignment: .leading, spacing: ThemeSpacing.xs) {
+                    if let record = summary.recordSeconds {
                         Text("training.summary.record \(TimeText.clock(record))", tableName: LocalizationTable.training.rawValue)
-                            .font(ThemeFont.rowValue)
-                    } icon: {
-                        Image(systemName: "trophy.fill").foregroundStyle(ThemeColor.accent)
+                            .font(ThemeFont.recordValue)
+                        if let last = summary.lastSession {
+                            lastSessionRow(last)
+                        }
+                    } else {
+                        Text("training.summary.empty", tableName: LocalizationTable.training.rawValue)
+                            .font(ThemeFont.recordValue)
+                        Text("training.summary.emptyHint", tableName: LocalizationTable.training.rawValue)
+                            .font(ThemeFont.body)
+                            .foregroundStyle(ThemeColor.contentSecondary)
                     }
                 }
-                if let last = summary.lastSession {
-                    lastSessionRow(last)
-                }
             }
+            .padding(.vertical, ThemeSpacing.xs)
         }
+    }
+
+    private func ringFraction(_ summary: SessionHistorySummary) -> Double {
+        guard let record = summary.recordSeconds, record > 0, let last = summary.lastSession else { return 0 }
+        return min(max(Double(last.achievedSecondsValue) / Double(record), 0), 1)
+    }
+
+    private func ringState(_ summary: SessionHistorySummary) -> RingState {
+        summary.lastSession?.isGoalReached == true ? .completed : .running
     }
 
     private func lastSessionRow(_ session: PlankSession) -> some View {
         let reached = session.isGoalReached
         let date = TimeText.relativeDateTime(session.startedAtValue)
         let achieved = TimeText.clock(session.achievedSecondsValue)
-        return Label {
+        let status = reached
+            ? Text("common.goalReached", tableName: LocalizationTable.common.rawValue)
+            : Text("common.goalMissed", tableName: LocalizationTable.common.rawValue)
+        return HStack(alignment: .firstTextBaseline, spacing: ThemeSpacing.xs) {
             Text("training.summary.last \(date) \(achieved)", tableName: LocalizationTable.training.rawValue)
-                .font(ThemeFont.rowValue)
-        } icon: {
-            Image(systemName: reached ? "checkmark.circle.fill" : "xmark.circle")
+            Image(systemName: reached ? "checkmark.circle.fill" : "circle.lefthalf.filled")
                 .foregroundStyle(reached ? ThemeColor.success : ThemeColor.contentSecondary)
-                .accessibilityLabel(
-                    reached
-                        ? Text("common.goalReached", tableName: LocalizationTable.common.rawValue)
-                        : Text("common.goalMissed", tableName: LocalizationTable.common.rawValue)
-                )
+                .accessibilityLabel(status)
+            if dynamicTypeSize.isAccessibilitySize {
+                status
+            }
         }
+        .font(ThemeFont.rowValue)
+        .foregroundStyle(ThemeColor.contentSecondary)
     }
 
     private var sessionTimeSection: some View {
@@ -128,13 +148,23 @@ struct TrainingScreen: View {
     private var preparationSection: some View {
         Section {
             Button(action: togglePreparation) {
-                HStack {
+                let layout = dynamicTypeSize.isAccessibilitySize
+                    ? AnyLayout(VStackLayout(alignment: .leading, spacing: ThemeSpacing.xs))
+                    : AnyLayout(HStackLayout())
+                layout {
                     Text("training.preparation", tableName: LocalizationTable.training.rawValue)
                         .foregroundStyle(ThemeColor.contentPrimary)
-                    Spacer()
-                    Text("training.preparation.value \(preparation)", tableName: LocalizationTable.training.rawValue)
-                        .font(ThemeFont.rowValue)
-                        .foregroundStyle(ThemeColor.contentSecondary)
+                    if !dynamicTypeSize.isAccessibilitySize { Spacer() }
+                    HStack(spacing: ThemeSpacing.s) {
+                        Text("training.preparation.value \(preparation)", tableName: LocalizationTable.training.rawValue)
+                            .font(ThemeFont.rowValue)
+                        Image(systemName: "chevron.right")
+                            .font(ThemeFont.caption.weight(.semibold))
+                            .rotationEffect(.degrees(isPreparationExpanded ? 90 : 0))
+                            .animation(reduceMotion ? nil : ThemeMotion.stateChange, value: isPreparationExpanded)
+                            .accessibilityHidden(true)
+                    }
+                    .foregroundStyle(isPreparationExpanded ? ThemeColor.accent : ThemeColor.contentSecondary)
                 }
                 .frame(minHeight: ThemeSize.minimumTapTarget)
                 .contentShape(Rectangle())
@@ -158,14 +188,22 @@ struct TrainingScreen: View {
 
     private var startButton: some View {
         Button(action: start) {
-            Text("training.start", tableName: LocalizationTable.training.rawValue)
-                .frame(maxWidth: .infinity)
+            Label {
+                Text("training.start", tableName: LocalizationTable.training.rawValue)
+            } icon: {
+                Image(systemName: "play.fill")
+            }
+            .font(ThemeFont.sessionButton)
+            .frame(maxWidth: .infinity, minHeight: startButtonHeight)
         }
-        .buttonStyle(.borderedProminent)
-        .controlSize(.extraLarge)
+        .buttonStyle(.glassProminent)
         .accessibilityHint(Text("training.start.hint", tableName: LocalizationTable.training.rawValue))
         .padding(.horizontal, ThemeSpacing.l)
         .padding(.vertical, ThemeSpacing.s)
+    }
+
+    private var startButtonHeight: CGFloat {
+        dynamicTypeSize.isAccessibilitySize ? ThemeSize.startButtonAccessibilityHeight : ThemeSize.startButtonHeight
     }
 
     private func loadStoredConfiguration() {
@@ -186,10 +224,8 @@ struct TrainingScreen: View {
     }
 
     private func togglePreparation() {
-        if reduceMotion {
+        withAnimation(reduceMotion ? ThemeMotion.reducedCrossfade : ThemeMotion.stateChange) {
             isPreparationExpanded.toggle()
-        } else {
-            withAnimation { isPreparationExpanded.toggle() }
         }
     }
 
