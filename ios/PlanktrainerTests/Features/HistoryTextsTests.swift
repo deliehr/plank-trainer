@@ -6,7 +6,10 @@ import Testing
     nonisolated static let keys: [String.LocalizationValue] = [
         "history.title",
         "history.chart.title",
-        "history.chart.summary \("1:30")",
+        "history.chart.average \("1:12")",
+        "history.chart.legend.reached",
+        "history.chart.legend.missed",
+        "history.row.delete",
         "history.chart.axis.session",
         "history.chart.axis.time",
         "history.row.result \("1:30") \("2:00")",

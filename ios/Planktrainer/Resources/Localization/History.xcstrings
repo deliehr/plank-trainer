@@ -35,23 +35,6 @@
         }
       }
     },
-    "history.chart.summary %@" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Dein Rekord: %@"
-          }
-        },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Your record: %@"
-          }
-        }
-      }
-    },
     "history.chart.axis.session" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -143,13 +126,13 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Hier erscheinen deine Sessions und Rekorde."
+            "value" : "Hier erscheinen deine Zeiten und dein Rekord. Die erste Linie hältst du gleich."
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Your sessions and records will appear here."
+            "value" : "Your times and your record will appear here. You'll hold your first line shortly."
           }
         }
       }
@@ -184,6 +167,74 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Couldn't Delete"
+          }
+        }
+      }
+    },
+    "history.chart.average %@" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ø %@"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Avg %@"
+          }
+        }
+      }
+    },
+    "history.chart.legend.reached" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "geschafft"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "reached"
+          }
+        }
+      }
+    },
+    "history.chart.legend.missed" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "nicht geschafft"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "missed"
+          }
+        }
+      }
+    },
+    "history.row.delete" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Löschen"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Delete"
           }
         }
       }

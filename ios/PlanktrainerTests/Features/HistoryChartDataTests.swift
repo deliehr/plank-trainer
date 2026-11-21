@@ -34,4 +34,17 @@ import Testing
         #expect(points.map(\.achievedSeconds) == [45, 75])
         #expect(points.map(\.plannedSeconds) == [60, 60])
     }
+
+    @Test func averageOfEmptyPointsIsNil() {
+        #expect(HistoryChartData.averageSeconds(of: []) == nil)
+    }
+
+    @Test func averageRoundsToNearestSecond() {
+        let points = HistoryChartData.points(from: [
+            session(daysAgo: 2, achieved: 60),
+            session(daysAgo: 1, achieved: 61),
+            session(daysAgo: 0, achieved: 90),
+        ])
+        #expect(HistoryChartData.averageSeconds(of: points) == 70)
+    }
 }

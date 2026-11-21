@@ -29,4 +29,10 @@ nonisolated enum HistoryChartData {
                 )
             }
     }
+
+    static func averageSeconds(of points: [HistoryChartPoint]) -> Int? {
+        guard !points.isEmpty else { return nil }
+        let total = points.reduce(0) { $0 + $1.achievedSeconds }
+        return Int((Double(total) / Double(points.count)).rounded())
+    }
 }

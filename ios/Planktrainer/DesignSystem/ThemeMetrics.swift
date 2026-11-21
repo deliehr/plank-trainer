@@ -26,9 +26,12 @@ enum ThemeSize {
     static let startButtonHeight: CGFloat = 64
     static let startButtonAccessibilityHeight: CGFloat = 88
     static let aboutIcon: CGFloat = 96
+    static let emptyStateRing: CGFloat = 172
 }
 
 enum HistoryChartMetrics {
+    static let height: CGFloat = 160
+    static let barWidthRatio: CGFloat = 0.75
     static let missedBarOutlineWidth: CGFloat = 1.5
     static let recordRuleDash: [CGFloat] = [5, 4]
     static let recordRuleWidth: CGFloat = 1

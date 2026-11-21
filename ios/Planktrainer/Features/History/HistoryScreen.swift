@@ -17,11 +17,6 @@ struct HistoryScreen: View {
             }
         }
         .navigationTitle(Text("history.title", tableName: LocalizationTable.history.rawValue))
-        .toolbar {
-            if !sessions.isEmpty {
-                EditButton()
-            }
-        }
         .alert(
             Text("history.deleteError.title", tableName: LocalizationTable.history.rawValue),
             isPresented: isShowingDeleteError,
@@ -40,7 +35,9 @@ struct HistoryScreen: View {
             Label {
                 Text("history.empty.title", tableName: LocalizationTable.history.rawValue)
             } icon: {
-                Image(systemName: "figure.core.training")
+                ProgressRing(fraction: 0, style: .detail, state: .running)
+                    .frame(width: ThemeSize.emptyStateRing)
+                    .accessibilityHidden(true)
             }
         } description: {
             Text("history.empty.message", tableName: LocalizationTable.history.rawValue)
@@ -64,8 +61,18 @@ struct HistoryScreen: View {
                     NavigationLink(value: Route.sessionDetail(session.idValue)) {
                         HistoryRow(session: session, isRecord: summary.isRecord(session))
                     }
+                    .swipeActions(edge: .trailing, allowsFullSwipe: true) {
+                        Button(role: .destructive) {
+                            delete(session)
+                        } label: {
+                            Label {
+                                Text("history.row.delete", tableName: LocalizationTable.history.rawValue)
+                            } icon: {
+                                Image(systemName: "trash.fill")
+                            }
+                        }
+                    }
                 }
-                .onDelete(perform: delete)
             }
         }
     }
@@ -74,13 +81,9 @@ struct HistoryScreen: View {
         Binding(get: { deleteError != nil }, set: { if !$0 { deleteError = nil } })
     }
 
-    private func delete(at offsets: IndexSet) {
-        let store = SessionStore(context: modelContext)
-        let targets = offsets.map { sessions[$0] }
+    private func delete(_ session: PlankSession) {
         do {
-            for session in targets {
-                try store.delete(session)
-            }
+            try SessionStore(context: modelContext).delete(session)
         } catch {
             deleteError = error
         }
@@ -103,6 +106,12 @@ struct HistoryScreen: View {
 
 #Preview("Empty") {
     NavigationStack { EmptyHistoryPreview() }
+}
+
+#Preview("Empty AX3 Dark") {
+    NavigationStack { EmptyHistoryPreview() }
+        .environment(\.dynamicTypeSize, .accessibility3)
+        .preferredColorScheme(.dark)
 }
 
 private struct EmptyHistoryPreview: View {
