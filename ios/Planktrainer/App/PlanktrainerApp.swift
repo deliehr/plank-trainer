@@ -3,6 +3,8 @@ import SwiftUI
 
 @main
 struct PlanktrainerApp: App {
+    @State private var appEnvironment = AppEnvironment(userSettings: UserSettings(), announcer: SilentAnnouncer())
+    @State private var router = AppRouter()
     private let containerResult: Result<ModelContainer, PersistenceError>
 
     init() {
@@ -17,7 +19,10 @@ struct PlanktrainerApp: App {
         WindowGroup {
             switch containerResult {
             case .success(let container):
-                Text(verbatim: "Planktrainer") // PLACEHOLDER(W0-T2)
+                RootView()
+                    .environment(appEnvironment)
+                    .environment(router)
+                    .preferredColorScheme(appEnvironment.userSettings.appearance.colorScheme)
                     .modelContainer(container)
             case .failure(let error):
                 ContainerErrorView(error: error)
