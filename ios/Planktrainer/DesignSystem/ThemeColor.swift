@@ -1,7 +1,7 @@
 import SwiftUI
 
 enum ThemeColor {
-    static let accent: Color = .accentColor
+    static let accent = Color(.plankIris)
     static let success = Color(.plankMoss)
     static let destructive = Color(.plankSignal)
     static let paused = Color(.plankAmber)
