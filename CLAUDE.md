@@ -72,9 +72,12 @@ xcodebuild -project ios/Planktrainer.xcodeproj -scheme Planktrainer -destination
 - **Umsetzung** durch mehrere parallele Subagenten mit Modell Sonnet 5.5 und Effort Medium; Aufträge an Agenten auf Deutsch.
 - **Tech Lead** ist ein Opus-Modell mit Effort High. Es nimmt jede Welle ab: Build grün, Tests grün, Review gegen Spezifikation und diese Datei.
 - Ein Implementierungsplan umfasst immer nur den aktuell freigegebenen Meilenstein.
+- **Kontext-Hinweis:** Sobald mehr als 25 % des Kontextfensters belegt sind, meldet Claude das einmal deutlich (z. B. „Hinweis: Kontext zu über 25 % belegt“). Die Zahl ist eine Schätzung; verbindlich ist `/context`.
 
 ## Git
 
+- **Niemals selbstständig pushen.** Git-Operationen, die den Verlauf, Branches oder das Remote verändern (`commit`, `push`, `merge`, `rebase`, `reset`, `tag`, Branches anlegen/löschen …), immer vorher mit dem Nutzer absprechen. Lesende Befehle (`status`, `diff`, `log`) sind frei.
+- Subagenten führen keine Git-Operationen aus. Der Tech Lead committet nach der Abnahme einer Welle und nach Absprache mit dem Nutzer.
 - Conventional Commits 1.0.0 (`feat:`, `fix:`, `docs:`, `chore:`, `test:`, `refactor:` …, optional mit Scope, z. B. `feat(session): …`).
 - Ein Commit pro Aufgabe; Abnahme pro Welle.
 - Lizenz: MIT (`LICENSE`).
