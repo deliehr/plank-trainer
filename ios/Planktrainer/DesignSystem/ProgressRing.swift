@@ -22,18 +22,15 @@ struct ProgressRing: View {
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
     @Environment(\.dynamicTypeSize) private var dynamicTypeSize
     @State private var rippleTrigger = 0
+    @State private var availableWidth: CGFloat = 0
 
     var body: some View {
-        GeometryReader { proxy in
-            ring(diameter: diameter(availableWidth: proxy.size.width))
-                .frame(width: proxy.size.width, height: proxy.size.height)
-        }
-        .aspectRatio(style == .mini ? nil : 1, contentMode: .fit)
-        .frame(
-            width: style == .mini ? RingMetrics.miniDiameter : nil,
-            height: style == .mini ? RingMetrics.miniDiameter : nil
-        )
-        .opacity(isDimmed ? ThemeOpacity.dimmedRing : 1)
+        let ringDiameter = diameter(availableWidth: availableWidth)
+        ring(diameter: ringDiameter)
+            .frame(maxWidth: style == .mini ? ringDiameter : .infinity)
+            .frame(height: ringDiameter)
+            .onGeometryChange(for: CGFloat.self) { $0.size.width } action: { availableWidth = $0 }
+            .opacity(isDimmed ? ThemeOpacity.dimmedRing : 1)
         .animation(reduceMotion ? ThemeMotion.reducedCrossfade : ThemeMotion.stateChange, value: isDimmed)
         .onChange(of: state) { oldState, newState in
             guard !reduceMotion, newState.isCompleted, !oldState.isCompleted else { return }
