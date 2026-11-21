@@ -28,8 +28,8 @@ struct SessionTimerView: View {
             ProgressRing(
                 fraction: fraction,
                 style: .session,
-                isPaused: display.isPaused,
-                isHighlighted: display.isFinalCountdown
+                state: display.isPaused ? .paused : .running,
+                isFinalSeconds: display.isFinalCountdown
             )
             .overlay { center }
             status
