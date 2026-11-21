@@ -6,7 +6,7 @@ Dieses Dokument ist die verbindliche Vorlage für die SwiftUI-Umsetzung. Die PNG
 
 ## 0. So arbeitest du damit
 
-1. Kopiere `PlankTrainer/DesignSystem/*.swift` ins App-Target. Alle Farben, Schriften, Abstände, Ring-Maße und Animationen kommen von dort. Keine Hex-Werte oder Magic Numbers in Views.
+1. Kopiere `docs/design/swift/*.swift` ins App-Target. Alle Farben, Schriften, Abstände, Ring-Maße und Animationen kommen von dort. Keine Hex-Werte oder Magic Numbers in Views.
 2. Setze die Screens in der Reihenfolge von Abschnitt 6 um. Vergleiche jeden Screen mit seinen PNGs (Hell und Dunkel).
 3. Arbeite die Checkliste in Abschnitt 10 ab.
 
