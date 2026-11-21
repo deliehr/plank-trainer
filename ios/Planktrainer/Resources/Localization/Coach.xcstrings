@@ -1,5 +1,2369 @@
 {
   "sourceLanguage" : "en",
-  "strings" : {},
+  "strings" : {
+    "coach.calm.completion.01" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gut gemacht."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Well done."
+          }
+        }
+      }
+    },
+    "coach.calm.completion.02" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Schön, dass du drangeblieben bist."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nice job sticking with it."
+          }
+        }
+      }
+    },
+    "coach.calm.completion.03" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Atme tief durch. Das war stark."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Take a deep breath. That was strong."
+          }
+        }
+      }
+    },
+    "coach.calm.completion.04" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wunderbar, du kannst stolz sein."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wonderful, be proud of yourself."
+          }
+        }
+      }
+    },
+    "coach.calm.completion.05" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geschafft. Gönn dir eine Pause."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Done. Treat yourself to a rest."
+          }
+        }
+      }
+    },
+    "coach.calm.filler.01" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ruhig weiteratmen."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Keep breathing calmly."
+          }
+        }
+      }
+    },
+    "coach.calm.filler.02" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du machst das gut."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You're doing well."
+          }
+        }
+      }
+    },
+    "coach.calm.filler.03" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Schön gleichmäßig."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nice and steady."
+          }
+        }
+      }
+    },
+    "coach.calm.filler.04" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bleib ganz bei dir."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stay with yourself."
+          }
+        }
+      }
+    },
+    "coach.calm.filler.05" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jede Sekunde macht dich stärker."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Every second makes you stronger."
+          }
+        }
+      }
+    },
+    "coach.calm.filler.06" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Entspann das Gesicht, halte den Körper."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Relax your face, hold your body."
+          }
+        }
+      }
+    },
+    "coach.calm.filler.07" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alles im grünen Bereich."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "All good."
+          }
+        }
+      }
+    },
+    "coach.calm.filler.08" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Konzentrier dich auf deinen Atem."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Focus on your breath."
+          }
+        }
+      }
+    },
+    "coach.calm.filler.09" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Genau so."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Just like that."
+          }
+        }
+      }
+    },
+    "coach.calm.filler.10" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du bist stärker, als du denkst."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You're stronger than you think."
+          }
+        }
+      }
+    },
+    "coach.calm.finalStretch.01" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gleich geschafft."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Almost there."
+          }
+        }
+      }
+    },
+    "coach.calm.finalStretch.02" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Der Endspurt beginnt. Ruhig atmen."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Final stretch. Keep breathing calmly."
+          }
+        }
+      }
+    },
+    "coach.calm.finalStretch.03" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nur noch ein kleines Stück."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Just a little more."
+          }
+        }
+      }
+    },
+    "coach.calm.finalStretch.04" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fast fertig, du machst das toll."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nearly done, you're doing great."
+          }
+        }
+      }
+    },
+    "coach.calm.halfway.01" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Halbzeit. Du machst das gut."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Halfway there. You're doing well."
+          }
+        }
+      }
+    },
+    "coach.calm.halfway.02" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Die Hälfte ist geschafft."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Half done."
+          }
+        }
+      }
+    },
+    "coach.calm.halfway.03" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Halbzeit. Bleib ruhig und gleichmäßig."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Halfway. Stay calm and steady."
+          }
+        }
+      }
+    },
+    "coach.calm.halfway.04" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Schon die Hälfte. Schön so."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Already halfway. Lovely."
+          }
+        }
+      }
+    },
+    "coach.calm.lastSession.01" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hier hast du letztes Mal aufgehört. Heute geht mehr."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "This is where you stopped last time. Today there's more."
+          }
+        }
+      }
+    },
+    "coach.calm.lastSession.02" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Genau hier war letztes Mal Schluss. Atme ruhig."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "This is where it ended last time. Breathe calmly."
+          }
+        }
+      }
+    },
+    "coach.calm.lastSession.03" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Die Stelle von letztem Mal, und du bist noch da."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Last time's mark, and you're still here."
+          }
+        }
+      }
+    },
+    "coach.calm.newRecord.01" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Neuer Rekord. Wunderbar."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "New record. Wonderful."
+          }
+        }
+      }
+    },
+    "coach.calm.newRecord.02" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Das ist ein neuer Rekord."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "That's a new record."
+          }
+        }
+      }
+    },
+    "coach.calm.newRecord.03" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Neuer Rekord. Ganz ruhig dranbleiben."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "New record. Stay calm and steady."
+          }
+        }
+      }
+    },
+    "coach.calm.newRecord.04" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rekord geknackt. Schön."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Record broken. Lovely."
+          }
+        }
+      }
+    },
+    "coach.calm.recordInSight.01" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Noch 5 Sekunden bis zu deinem Rekord."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "5 seconds to your personal best."
+          }
+        }
+      }
+    },
+    "coach.calm.recordInSight.02" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dein Rekord ist ganz nah."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your record is very close."
+          }
+        }
+      }
+    },
+    "coach.calm.recordInSight.03" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gleich erreichst du deinen Rekord."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You're about to reach your record."
+          }
+        }
+      }
+    },
+    "coach.calm.resume.01" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Weiter geht's, noch %@."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Here we go again, %@ to go."
+          }
+        }
+      }
+    },
+    "coach.calm.resume.02" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ganz ruhig wieder rein. Noch %@."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ease back in. %@ to go."
+          }
+        }
+      }
+    },
+    "coach.calm.resume.03" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Und los, noch %@."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "And go, %@ to go."
+          }
+        }
+      }
+    },
+    "coach.calm.start.01" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Planking Session gestartet, noch %@. Ganz ruhig, du hast Zeit."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Planking session started, %@ to go. Nice and steady."
+          }
+        }
+      }
+    },
+    "coach.calm.start.02" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Los geht's in deinem Tempo, noch %@."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Here we go, at your own pace, %@ to go."
+          }
+        }
+      }
+    },
+    "coach.calm.start.03" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Atme ruhig. Planking Session gestartet, noch %@."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Breathe calmly. Planking session started, %@ to go."
+          }
+        }
+      }
+    },
+    "coach.calm.start.04" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Schön, dass du da bist. Noch %@."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Glad you're here. %@ to go."
+          }
+        }
+      }
+    },
+    "coach.calm.stopped.01" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gestoppt nach %@. Jede Sekunde zählt."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stopped after %@. Every second counts."
+          }
+        }
+      }
+    },
+    "coach.calm.stopped.02" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alles gut, %@ sind auch ein Erfolg."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "That's fine, %@ is still a win."
+          }
+        }
+      }
+    },
+    "coach.calm.stopped.03" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gestoppt nach %@. Ruh dich aus."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stopped after %@. Get some rest."
+          }
+        }
+      }
+    },
+    "coach.cheeky.completion.01" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geschafft. Du darfst jetzt wieder aufs Sofa."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Done. You may return to the couch."
+          }
+        }
+      }
+    },
+    "coach.cheeky.completion.02" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nicht schlecht für jemanden, der vorhin noch gejammert hat."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Not bad for someone who was whining earlier."
+          }
+        }
+      }
+    },
+    "coach.cheeky.completion.03" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Überlebt. Ich bin fast ein bisschen stolz."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Survived. I'm almost a little proud."
+          }
+        }
+      }
+    },
+    "coach.cheeky.completion.04" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geschafft! Siehst du, Ausreden waren unnötig."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Done! See, no excuses needed."
+          }
+        }
+      }
+    },
+    "coach.cheeky.completion.05" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fertig. Das Zittern hört gleich auf. Wahrscheinlich."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Finished. The shaking will stop soon. Probably."
+          }
+        }
+      }
+    },
+    "coach.cheeky.filler.01" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zitterst du etwa schon?"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Are you shaking already?"
+          }
+        }
+      }
+    },
+    "coach.cheeky.filler.02" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Das Sofa ruft. Ignorier es."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The couch is calling. Ignore it."
+          }
+        }
+      }
+    },
+    "coach.cheeky.filler.03" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ich hab schon gekochte Nudeln gesehen, die stabiler waren."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I've seen cooked noodles more stable than this."
+          }
+        }
+      }
+    },
+    "coach.cheeky.filler.04" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Komm schon, meine Oma hält länger durch."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Come on, my grandma lasts longer than this."
+          }
+        }
+      }
+    },
+    "coach.cheeky.filler.05" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nicht einschlafen da unten!"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Don't fall asleep down there!"
+          }
+        }
+      }
+    },
+    "coach.cheeky.filler.06" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wer jammern kann, kann auch durchhalten."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "If you can whine, you can hold on."
+          }
+        }
+      }
+    },
+    "coach.cheeky.filler.07" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hübsches Zittern. Dranbleiben."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nice shaking. Hang in there."
+          }
+        }
+      }
+    },
+    "coach.cheeky.filler.08" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ausreden zählen nicht als Training."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Excuses don't count as training."
+          }
+        }
+      }
+    },
+    "coach.cheeky.filler.09" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du schaffst das. Vermutlich."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You can do it. Probably."
+          }
+        }
+      }
+    },
+    "coach.cheeky.filler.10" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Faultiere sind schneller, aber immerhin hältst du still."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sloths are faster, but at least you're holding still."
+          }
+        }
+      }
+    },
+    "coach.cheeky.finalStretch.01" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Endspurt! Jetzt bloß nicht peinlich werden."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Final push! Don't embarrass yourself now."
+          }
+        }
+      }
+    },
+    "coach.cheeky.finalStretch.02" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Endspurt! Zittern zählt übrigens nicht als Ausrede."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Final push! Shaking is not an excuse, by the way."
+          }
+        }
+      }
+    },
+    "coach.cheeky.finalStretch.03" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gleich darfst du wieder rumliegen, Schlafmütze."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You can go back to lying around soon, sleepyhead."
+          }
+        }
+      }
+    },
+    "coach.cheeky.finalStretch.04" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Endspurt! Deine Ausreden kannst du dir sparen."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Final push! Save your excuses."
+          }
+        }
+      }
+    },
+    "coach.cheeky.halfway.01" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Halbzeit. Überraschung, du lebst noch!"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Halfway. Surprise, you're still alive!"
+          }
+        }
+      }
+    },
+    "coach.cheeky.halfway.02" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Halbzeit! Hätte ich ehrlich gesagt nicht gedacht."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Halfway! Honestly, didn't see that coming."
+          }
+        }
+      }
+    },
+    "coach.cheeky.halfway.03" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Halbzeit. Jetzt bloß nicht schlappmachen, du Weichei!"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Halfway. Don't wimp out on me now!"
+          }
+        }
+      }
+    },
+    "coach.cheeky.halfway.04" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Die Hälfte! Dein Sofa vermisst dich schon."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Half done! Your couch already misses you."
+          }
+        }
+      }
+    },
+    "coach.cheeky.lastSession.01" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hier hast du letztes Mal aufgegeben. Nur so als Info."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "This is where you gave up last time. Just saying."
+          }
+        }
+      }
+    },
+    "coach.cheeky.lastSession.02" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Letztes Mal war hier Feierabend. Heute auch, Weichei?"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Last time you clocked out here. Again today, wimp?"
+          }
+        }
+      }
+    },
+    "coach.cheeky.lastSession.03" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kommt dir die Stelle bekannt vor? Genau, hier hast du gekniffen."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Look familiar? Yep, this is where you bailed."
+          }
+        }
+      }
+    },
+    "coach.cheeky.newRecord.01" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Neuer Rekord. Wer hätte das gedacht? Ich nicht."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "New record. Who'd have thought? Not me."
+          }
+        }
+      }
+    },
+    "coach.cheeky.newRecord.02" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rekord geknackt! Das Sofa ist enttäuscht."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Record broken! The couch is disappointed."
+          }
+        }
+      }
+    },
+    "coach.cheeky.newRecord.03" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Neuer Rekord. Okay, ich nehm alles zurück. Fast alles."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "New record. Okay, I take it all back. Almost."
+          }
+        }
+      }
+    },
+    "coach.cheeky.newRecord.04" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rekord! Bild dir bloß nichts darauf ein."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Record! Don't let it go to your head."
+          }
+        }
+      }
+    },
+    "coach.cheeky.recordInSight.01" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Noch 5 Sekunden bis zum Rekord. Jetzt nicht kneifen."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "5 seconds to your record. Don't chicken out now."
+          }
+        }
+      }
+    },
+    "coach.cheeky.recordInSight.02" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rekord in Sicht. Ich bin ehrlich überrascht."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Record in sight. I'm honestly surprised."
+          }
+        }
+      }
+    },
+    "coach.cheeky.recordInSight.03" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dein alter Rekord zittert. Du übrigens auch."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your old record is shaking. So are you, by the way."
+          }
+        }
+      }
+    },
+    "coach.cheeky.resume.01" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Genug ausgeruht. Noch %@."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enough lounging. %@ to go."
+          }
+        }
+      }
+    },
+    "coach.cheeky.resume.02" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Na, Akku wieder voll? Noch %@."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Recharged? %@ to go."
+          }
+        }
+      }
+    },
+    "coach.cheeky.resume.03" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Die Pause war länger als nötig. Noch %@."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "That break was longer than necessary. %@ to go."
+          }
+        }
+      }
+    },
+    "coach.cheeky.start.01" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Planking Session gestartet, noch %@. Das Sofa kann warten."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Planking session started, %@ to go. The couch can wait."
+          }
+        }
+      }
+    },
+    "coach.cheeky.start.02" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Na endlich! Noch %@. Mal sehen, ob du heute durchhältst."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Finally! %@ to go. Let's see if you last today."
+          }
+        }
+      }
+    },
+    "coach.cheeky.start.03" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Noch %@. Und nein, Jammern macht's nicht kürzer."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ to go. And no, whining won't make it shorter."
+          }
+        }
+      }
+    },
+    "coach.cheeky.start.04" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Komm schon, du Faultier! Noch %@."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Come on, you sloth! %@ to go."
+          }
+        }
+      }
+    },
+    "coach.cheeky.stopped.01" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gestoppt nach %@. Das Sofa hat gewonnen."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stopped after %@. The couch wins."
+          }
+        }
+      }
+    },
+    "coach.cheeky.stopped.02" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Schon vorbei? %@. Ich sag nichts."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Over already? %@. I'm not saying anything."
+          }
+        }
+      }
+    },
+    "coach.cheeky.stopped.03" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@. Mutig, das eine Session zu nennen."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@. Bold of you to call that a session."
+          }
+        }
+      }
+    },
+    "coach.demanding.completion.01" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stark! So sieht Disziplin aus!"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Strong! That's what discipline looks like!"
+          }
+        }
+      }
+    },
+    "coach.demanding.completion.02" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geschafft! Du bist eine Maschine!"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Done! You're a machine!"
+          }
+        }
+      }
+    },
+    "coach.demanding.completion.03" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sauber durchgezogen!"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nailed it!"
+          }
+        }
+      }
+    },
+    "coach.demanding.completion.04" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Das war richtig stark!"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "That was seriously strong!"
+          }
+        }
+      }
+    },
+    "coach.demanding.completion.05" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ziel erreicht! Genau so!"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Goal reached! Just like that!"
+          }
+        }
+      }
+    },
+    "coach.demanding.filler.01" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du schaffst das!"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You've got this!"
+          }
+        }
+      }
+    },
+    "coach.demanding.filler.02" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stark, genau so!"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Strong, just like that!"
+          }
+        }
+      }
+    },
+    "coach.demanding.filler.03" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nicht nachlassen!"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Don't let up!"
+          }
+        }
+      }
+    },
+    "coach.demanding.filler.04" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Halt die Spannung!"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hold the tension!"
+          }
+        }
+      }
+    },
+    "coach.demanding.filler.05" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kämpf!"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fight for it!"
+          }
+        }
+      }
+    },
+    "coach.demanding.filler.06" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Das brennt? Gut so!"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "It burns? Good!"
+          }
+        }
+      }
+    },
+    "coach.demanding.filler.07" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bleib hart!"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stay tough!"
+          }
+        }
+      }
+    },
+    "coach.demanding.filler.08" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jede Sekunde zählt!"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Every second counts!"
+          }
+        }
+      }
+    },
+    "coach.demanding.filler.09" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du bist eine Maschine!"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You're a machine!"
+          }
+        }
+      }
+    },
+    "coach.demanding.filler.10" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gib nicht auf!"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Don't give up!"
+          }
+        }
+      }
+    },
+    "coach.demanding.finalStretch.01" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Endspurt! Alles geben!"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Final push! Give it everything!"
+          }
+        }
+      }
+    },
+    "coach.demanding.finalStretch.02" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jetzt zählt's!"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "This is where it counts!"
+          }
+        }
+      }
+    },
+    "coach.demanding.finalStretch.03" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Durchziehen!"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Push through!"
+          }
+        }
+      }
+    },
+    "coach.demanding.finalStretch.04" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Endspurt! Keinen Zentimeter nachgeben!"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Final push! Don't give an inch!"
+          }
+        }
+      }
+    },
+    "coach.demanding.halfway.01" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Halbzeit! Jetzt nicht nachlassen!"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Halfway! Don't let up now!"
+          }
+        }
+      }
+    },
+    "coach.demanding.halfway.02" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Halbzeit! Die zweite Hälfte gehört dir!"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Halfway! The second half is yours!"
+          }
+        }
+      }
+    },
+    "coach.demanding.halfway.03" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Halbzeit! Spannung halten!"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Halfway! Keep the tension!"
+          }
+        }
+      }
+    },
+    "coach.demanding.halfway.04" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Die Hälfte ist weg, jetzt erst recht!"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Half gone, now more than ever!"
+          }
+        }
+      }
+    },
+    "coach.demanding.lastSession.01" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hier hast du letztes Mal aufgehört. Heute nicht!"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "This is where you quit last time. Not today!"
+          }
+        }
+      }
+    },
+    "coach.demanding.lastSession.02" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Letztes Mal war hier Schluss. Heute gehst du drüber!"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Last time it ended here. Today you go beyond!"
+          }
+        }
+      }
+    },
+    "coach.demanding.lastSession.03" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alte Grenze erreicht. Drüber!"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Old limit reached. Beyond it!"
+          }
+        }
+      }
+    },
+    "coach.demanding.newRecord.01" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Neuer Rekord! Dranbleiben!"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "New record! Stay on it!"
+          }
+        }
+      }
+    },
+    "coach.demanding.newRecord.02" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rekord geknackt! Jetzt noch einen draufsetzen!"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Record smashed! Now add some more!"
+          }
+        }
+      }
+    },
+    "coach.demanding.newRecord.03" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Neuer Rekord! Du bist nicht zu stoppen!"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "New record! You're unstoppable!"
+          }
+        }
+      }
+    },
+    "coach.demanding.newRecord.04" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rekord! Und es ist noch nicht vorbei!"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Record! And it's not over yet!"
+          }
+        }
+      }
+    },
+    "coach.demanding.recordInSight.01" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Noch 5 Sekunden bis zum Rekord, hol ihn dir!"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "5 seconds to your record, go get it!"
+          }
+        }
+      }
+    },
+    "coach.demanding.recordInSight.02" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Der Rekord wackelt!"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your record is wobbling!"
+          }
+        }
+      }
+    },
+    "coach.demanding.recordInSight.03" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rekord in Sichtweite! Dranbleiben!"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Record in sight! Stay on it!"
+          }
+        }
+      }
+    },
+    "coach.demanding.resume.01" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zurück an die Arbeit! Noch %@!"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Back to work! %@ to go!"
+          }
+        }
+      }
+    },
+    "coach.demanding.resume.02" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Los! Noch %@!"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Go! %@ to go!"
+          }
+        }
+      }
+    },
+    "coach.demanding.resume.03" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Neue Kraft, noch %@!"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fresh energy, %@ to go!"
+          }
+        }
+      }
+    },
+    "coach.demanding.start.01" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Planking Session gestartet, noch %@. Zeig, was du kannst!"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Planking session started, %@ to go. Show me what you've got!"
+          }
+        }
+      }
+    },
+    "coach.demanding.start.02" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Los geht's! Noch %@. Spannung halten!"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Let's go! %@ to go. Hold that tension!"
+          }
+        }
+      }
+    },
+    "coach.demanding.start.03" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Die Session läuft, noch %@. Keine Kompromisse."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Session's on, %@ to go. No compromises."
+          }
+        }
+      }
+    },
+    "coach.demanding.start.04" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Auf geht's! Noch %@, jede Sekunde zählt."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Let's do this! %@ to go, every second counts."
+          }
+        }
+      }
+    },
+    "coach.demanding.stopped.01" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gestoppt nach %@. Nächstes Mal mehr!"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stopped after %@. More next time!"
+          }
+        }
+      }
+    },
+    "coach.demanding.stopped.02" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@. Da geht noch was!"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@. There's more in you!"
+          }
+        }
+      }
+    },
+    "coach.demanding.stopped.03" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gestoppt nach %@. Abhaken und wiederkommen!"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stopped after %@. Shake it off and come back!"
+          }
+        }
+      }
+    },
+    "coach.posture.01" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bauch anspannen."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brace your core."
+          }
+        }
+      }
+    },
+    "coach.posture.02" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Po anspannen."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Squeeze your glutes."
+          }
+        }
+      }
+    },
+    "coach.posture.03" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hüfte nicht durchhängen lassen."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Don't let your hips sag."
+          }
+        }
+      }
+    },
+    "coach.posture.04" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hüfte nicht zu hoch."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Don't pike your hips."
+          }
+        }
+      }
+    },
+    "coach.posture.05" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ellbogen unter die Schultern."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elbows under your shoulders."
+          }
+        }
+      }
+    },
+    "coach.posture.06" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Blick zum Boden, Nacken lang."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eyes down, long neck."
+          }
+        }
+      }
+    },
+    "coach.posture.07" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Schultern weg von den Ohren."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Shoulders away from your ears."
+          }
+        }
+      }
+    },
+    "coach.posture.08" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gleichmäßig atmen."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Breathe evenly."
+          }
+        }
+      }
+    },
+    "coach.posture.09" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gerade wie ein Brett."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Straight as a board."
+          }
+        }
+      }
+    },
+    "coach.posture.10" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fersen nach hinten schieben."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Push your heels back."
+          }
+        }
+      }
+    }
+  },
   "version" : "1.0"
 }
