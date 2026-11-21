@@ -126,13 +126,13 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Gelassen und achtsam."
+            "value" : "Gelassen, viel Atem, wenig Worte."
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Relaxed and mindful."
+            "value" : "Relaxed, lots of breath, few words."
           }
         }
       }
@@ -160,13 +160,13 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sportlich und antreibend."
+            "value" : "Klar und direkt, wie im Kurs."
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sporty and driving."
+            "value" : "Clear and direct, like in class."
           }
         }
       }
@@ -194,13 +194,13 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Humorvoll und ein bisschen frech."
+            "value" : "Mit Augenzwinkern. Nichts für Zartbesaitete."
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Funny and a little cheeky."
+            "value" : "Tongue in cheek. Not for the faint-hearted."
           }
         }
       }
@@ -262,13 +262,13 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Kurze Tipps zur Haltung zwischen den Ansagen, unabhängig vom Coach-Stil."
+            "value" : "Hinweise wie „Hüfte nicht hängen lassen“ kommen höchstens alle 20 s."
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Short tips on your posture between announcements, independent of the coach style."
+            "value" : "Hints like “Don’t let your hips sag” come at most every 20 s."
           }
         }
       }
@@ -286,23 +286,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Haptics"
-          }
-        }
-      }
-    },
-    "settings.haptics.footer" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Vibrationen beim Countdown, beim Start und bei einer geschafften Session."
-          }
-        },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Vibrations for the countdown, the start and a completed session."
           }
         }
       }
@@ -405,6 +388,40 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Source Code on GitHub"
+          }
+        }
+      }
+    },
+    "about.appName" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Plank-Trainer"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Plank-Trainer"
+          }
+        }
+      }
+    },
+    "about.footer" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Keine Konten, keine Tracker; alle Daten bleiben auf dem iPhone."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No accounts, no trackers; all data stays on your iPhone."
           }
         }
       }

@@ -21,13 +21,14 @@ import Testing
         "settings.postureHints",
         "settings.postureHints.footer",
         "settings.haptics",
-        "settings.haptics.footer",
         "settings.about",
         "about.title",
         "about.version",
         "about.license",
         "about.license.value",
         "about.sourceCode",
+        "about.appName",
+        "about.footer",
     ]
 
     @Test(arguments: ["de", "en"], keys)

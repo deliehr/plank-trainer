@@ -25,6 +25,7 @@ enum ThemeSize {
     static let sessionControlSpacing: CGFloat = 24
     static let startButtonHeight: CGFloat = 64
     static let startButtonAccessibilityHeight: CGFloat = 88
+    static let aboutIcon: CGFloat = 96
 }
 
 enum HistoryChartMetrics {

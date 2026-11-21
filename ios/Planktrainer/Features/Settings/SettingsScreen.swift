@@ -14,7 +14,10 @@ struct SettingsScreen: View {
                 } label: {
                     Text("settings.appearance", tableName: LocalizationTable.settings.rawValue)
                 }
-                .pickerStyle(.menu)
+                .pickerStyle(.segmented)
+                .labelsHidden()
+            } header: {
+                Text("settings.appearance", tableName: LocalizationTable.settings.rawValue)
             }
 
             Section {
@@ -35,16 +38,11 @@ struct SettingsScreen: View {
                 Toggle(isOn: $settings.postureHintsEnabled) {
                     Text("settings.postureHints", tableName: LocalizationTable.settings.rawValue)
                 }
-            } footer: {
-                Text("settings.postureHints.footer", tableName: LocalizationTable.settings.rawValue)
-            }
-
-            Section {
                 Toggle(isOn: $settings.hapticsEnabled) {
                     Text("settings.haptics", tableName: LocalizationTable.settings.rawValue)
                 }
             } footer: {
-                Text("settings.haptics.footer", tableName: LocalizationTable.settings.rawValue)
+                Text("settings.postureHints.footer", tableName: LocalizationTable.settings.rawValue)
             }
 
             Section {
@@ -63,14 +61,14 @@ private struct CoachStyleRow: View {
     var body: some View {
         VStack(alignment: .leading, spacing: ThemeSpacing.xs) {
             style.name
-                .font(ThemeFont.body)
+                .font(ThemeFont.sectionTitle)
                 .foregroundStyle(ThemeColor.contentPrimary)
             style.description
-                .font(ThemeFont.caption)
+                .font(.subheadline)
                 .foregroundStyle(ThemeColor.contentSecondary)
             if let example = style.exampleSentence {
                 Text(verbatim: quoted(example))
-                    .font(ThemeFont.caption.italic())
+                    .font(.subheadline.italic())
                     .foregroundStyle(ThemeColor.contentSecondary)
             }
         }
