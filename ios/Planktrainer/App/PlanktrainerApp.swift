@@ -3,7 +3,7 @@ import SwiftUI
 
 @main
 struct PlanktrainerApp: App {
-    @State private var appEnvironment = AppEnvironment(userSettings: UserSettings(), announcer: SilentAnnouncer())
+    @State private var appEnvironment = AppEnvironment(userSettings: UserSettings(), announcer: SpeechAnnouncer())
     @State private var router = AppRouter()
     private let containerResult: Result<ModelContainer, PersistenceError>
 
