@@ -1144,7 +1144,7 @@ struct SessionHistorySummary {
 enum TimeText {
     static func clock(_ seconds: Int) -> String                                              // "1:30", "10:00", "0:05"
     static func accessibleDuration(_ seconds: Int, locale: Locale = AppLocale.current) -> String  // "1 minute, 30 seconds"
-    static func compactDuration(_ seconds: Int, locale: Locale = AppLocale.current) -> String     // "12 s", "1 min, 12 s"
+    static func compactDuration(_ seconds: Int, locale: Locale = AppLocale.current) -> String     // "12 sec", "1 min, 12 sec"
     static func relativeDateTime(_ date: Date, locale: Locale = AppLocale.current, timeZone: TimeZone = .current) -> String // "Heute, 07:42"
 }
 
