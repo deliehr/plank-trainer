@@ -1,0 +1,62 @@
+name: Planktrainer
+options:
+  bundleIdPrefix: de.liehrit
+  deploymentTarget:
+    iOS: "26.0"
+  developmentLanguage: en
+settings:
+  base:
+    SWIFT_VERSION: "6"
+    SWIFT_DEFAULT_ACTOR_ISOLATION: MainActor
+    SWIFT_APPROACHABLE_CONCURRENCY: "YES"
+    SWIFT_STRICT_CONCURRENCY: complete
+    TARGETED_DEVICE_FAMILY: "1"
+    DEVELOPMENT_TEAM: 8HM2FV529D
+    CODE_SIGN_STYLE: Automatic
+    MARKETING_VERSION: "1.0.0"
+    CURRENT_PROJECT_VERSION: "1"
+    LOCALIZATION_PREFERS_STRING_CATALOGS: "YES"
+    SWIFT_EMIT_LOC_STRINGS: "YES"
+targets:
+  Planktrainer:
+    type: application
+    platform: iOS
+    sources:
+      - path: Planktrainer
+        type: syncedFolder
+      - path: SupportingFiles
+    settings:
+      base:
+        PRODUCT_NAME: Planktrainer
+        PRODUCT_BUNDLE_IDENTIFIER: de.liehrit.planktrainer
+        GENERATE_INFOPLIST_FILE: "YES"
+        INFOPLIST_KEY_CFBundleDisplayName: Plank-Trainer
+        INFOPLIST_KEY_UILaunchScreen_Generation: "YES"
+        INFOPLIST_KEY_UIApplicationSceneManifest_Generation: "YES"
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone: UIInterfaceOrientationPortrait
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        ENABLE_PREVIEWS: "YES"
+  PlanktrainerTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: PlanktrainerTests
+        type: syncedFolder
+    dependencies:
+      - target: Planktrainer
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: de.liehrit.planktrainer.tests
+        GENERATE_INFOPLIST_FILE: "YES"
+        TEST_HOST: "$(BUILT_PRODUCTS_DIR)/Planktrainer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Planktrainer"
+        BUNDLE_LOADER: "$(TEST_HOST)"
+schemes:
+  Planktrainer:
+    build:
+      targets:
+        Planktrainer: all
+        PlanktrainerTests: [test]
+    test:
+      targets:
+        - PlanktrainerTests
