@@ -1,6 +1,23 @@
 {
   "sourceLanguage": "en",
   "strings": {
+    "active.announcementsPaused": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ansagen pausiert"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Announcements paused"
+          }
+        }
+      }
+    },
     "active.cancel": {
       "extractionState": "manual",
       "localizations": {
@@ -14,6 +31,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "Cancel"
+          }
+        }
+      }
+    },
+    "active.coach %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Coach: %@"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Coach: %@"
+          }
+        }
+      }
+    },
+    "active.coachLine %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "„%@“"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“%@”"
           }
         }
       }
@@ -58,13 +109,13 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Diese Session wird nicht gespeichert."
+            "value": "Die bisherige Zeit wird nicht gespeichert."
           }
         },
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "This session won't be saved."
+            "value": "The time so far won't be saved."
           }
         }
       }
@@ -154,6 +205,40 @@
         }
       }
     },
+    "active.prepare.goal %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ziel %@ · Start mit Ansage"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Goal %@ · Starts with an announcement"
+          }
+        }
+      }
+    },
+    "active.prepare.posture": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "iPhone flach vor dich legen. Unterarme auf den Boden, Körper in eine Linie."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Place your iPhone flat in front of you. Forearms on the floor, body in one line."
+          }
+        }
+      }
+    },
     "active.resume": {
       "extractionState": "manual",
       "localizations": {
@@ -177,7 +262,24 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Gleich geht's weiter"
+            "value": "Weiter in …"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Resuming in…"
+          }
+        }
+      }
+    },
+    "active.resuming.hint": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spannung aufbauen"
           }
         },
         "en": {
@@ -222,6 +324,23 @@
         }
       }
     },
+    "active.stop.combined": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stop & speichern"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stop & Save"
+          }
+        }
+      }
+    },
     "active.stop.hint": {
       "extractionState": "manual",
       "localizations": {
@@ -235,6 +354,23 @@
           "stringUnit": {
             "state": "translated",
             "value": "Ends the session and saves it."
+          }
+        }
+      }
+    },
+    "active.stop.subtitle": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "speichern"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "save"
           }
         }
       }

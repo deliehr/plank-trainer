@@ -286,6 +286,26 @@ struct SessionEngineTests {
         #expect(try #require(h.engine.result).isNewRecord == expected)
     }
 
+    @Test func latestCoachLineTracksRunningAnnouncementsOnly() {
+        let h = Harness(extras: [Self.item(10, "F10"), Self.item(12, "C", kind: .countdown(3))])
+        h.engine.start()
+        #expect(h.engine.latestCoachLine == nil)
+        h.advance(5)
+        #expect(h.engine.latestCoachLine == "A0")
+        h.advance(10)
+        #expect(h.engine.latestCoachLine == "F10")
+        h.advance(2)
+        #expect(h.engine.latestCoachLine == "F10")
+        h.engine.pause()
+        #expect(h.engine.latestCoachLine == "F10")
+    }
+
+    @Test func previousRecordSecondsExposesHistoryRecord() {
+        let h = Harness(history: SessionHistoryContext(recordSeconds: 42, lastSession: nil))
+        #expect(h.engine.previousRecordSeconds == 42)
+        #expect(Harness().engine.previousRecordSeconds == nil)
+    }
+
     @Test func newRecordAlreadyAnnouncedIsForwarded() {
         let h = Harness(
             history: SessionHistoryContext(recordSeconds: 10, lastSession: nil),

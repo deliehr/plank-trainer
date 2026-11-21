@@ -17,6 +17,7 @@ final class SessionEngine {
     private(set) var result: SessionResult?
     private(set) var announcementError: AnnouncerError?
     private(set) var hapticSignal: SessionHapticSignal?
+    private(set) var latestCoachLine: String?
 
     @ObservationIgnored private let history: SessionHistoryContext
     @ObservationIgnored private let coachStyle: CoachStyle
@@ -39,6 +40,7 @@ final class SessionEngine {
 
     var totalSeconds: Int { configuration.plannedSeconds + extensionSeconds }
     var remainingSeconds: Int { max(0, totalSeconds - elapsedSeconds) }
+    var previousRecordSeconds: Int? { history.recordSeconds }
 
     var timerDisplay: SessionTimerDisplay {
         SessionTimerDisplay(
@@ -265,6 +267,10 @@ final class SessionEngine {
                 startSecond: item.elapsedSecond,
                 estimatedDuration: item.estimatedDuration
             )
+            switch item.kind {
+            case .countdown: break
+            default: latestCoachLine = item.text
+            }
         }
     }
 

@@ -10,7 +10,7 @@ struct ActiveSessionScreen: View {
 
     var body: some View {
         ZStack {
-            ThemeColor.surface.ignoresSafeArea()
+            ThemeColor.sessionSurface.ignoresSafeArea()
             if let engine {
                 ActiveSessionContent(engine: engine)
             }

@@ -1,36 +1,19 @@
 {
   "sourceLanguage": "en",
   "strings": {
-    "display.paused": {
+    "display.countdown.accessibility %lld": {
       "extractionState": "manual",
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Pausiert"
+            "value": "Start in %lld"
           }
         },
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Paused"
-          }
-        }
-      }
-    },
-    "display.remaining": {
-      "extractionState": "manual",
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Restzeit"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Remaining time"
+            "value": "Starting in %lld"
           }
         }
       }
@@ -69,36 +52,53 @@
         }
       }
     },
-    "display.countdown.accessibility %lld": {
+    "display.of %@": {
       "extractionState": "manual",
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Start in %lld"
+            "value": "von %@"
           }
         },
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Starting in %lld"
+            "value": "of %@"
           }
         }
       }
     },
-    "display.result.goal %@": {
+    "display.paused": {
       "extractionState": "manual",
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Ziel: %@"
+            "value": "Pausiert"
           }
         },
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Goal: %@"
+            "value": "Paused"
+          }
+        }
+      }
+    },
+    "display.remaining": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Restzeit"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Remaining time"
           }
         }
       }
@@ -116,6 +116,108 @@
           "stringUnit": {
             "state": "translated",
             "value": "Done"
+          }
+        }
+      }
+    },
+    "display.result.goal %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ziel %@"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Goal %@"
+          }
+        }
+      }
+    },
+    "display.result.headline.missed": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gut gehalten"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Well held"
+          }
+        }
+      }
+    },
+    "display.result.headline.reached": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Geschafft"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Completed"
+          }
+        }
+      }
+    },
+    "display.result.overRecord %lld %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$lld s über dem alten Rekord (%2$@)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$lld s over the old record (%2$@)"
+          }
+        }
+      }
+    },
+    "display.result.remainingToGoal %lld": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Noch %lld s bis zum Ziel"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld s to go"
+          }
+        }
+      }
+    },
+    "display.result.saved": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gespeichert im Verlauf"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Saved to History"
           }
         }
       }

@@ -4,13 +4,19 @@ struct AnnouncementNoticeView: View {
     let error: AnnouncerError
 
     var body: some View {
-        Label(error.localizedDescription, systemImage: "speaker.slash")
-            .font(ThemeFont.caption)
-            .foregroundStyle(ThemeColor.contentSecondary)
-            .frame(maxWidth: .infinity, alignment: .leading)
-            .onAppear {
-                AccessibilityNotification.Announcement(error.localizedDescription).post()
-            }
+        Label {
+            Text(verbatim: error.localizedDescription)
+        } icon: {
+            Image(systemName: "speaker.slash.fill")
+        }
+        .font(ThemeFont.caption)
+        .foregroundStyle(ThemeColor.contentPrimary)
+        .padding(.horizontal, ThemeSpacing.l)
+        .padding(.vertical, ThemeSpacing.s)
+        .glassEffect(.regular, in: .capsule)
+        .onAppear {
+            AccessibilityNotification.Announcement(error.localizedDescription).post()
+        }
     }
 }
 
