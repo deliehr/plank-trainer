@@ -6,7 +6,8 @@
 ._*
 
 # Custom folder icons
-Icon
+Icon
+
 
 # Volume root files
 .DocumentRevisions-V100
@@ -16,3 +17,42 @@ Icon
 .Trashes
 .VolumeIcon.icns
 .com.apple.timemachine.donotpresent
+### Xcode / Swift
+xcuserdata/
+DerivedData/
+build/
+*.xcscmblueprint
+*.xccheckout
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+timeline.xctimeline
+playground.xcworkspace
+.build/
+.swiftpm/
+Packages/
+Package.resolved
+*.xcresult
+
+### Java / Maven / Spring Boot
+target/
+*.log
+hs_err_pid*
+replay_pid*
+HELP.md
+
+### IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+### VS Code
+.vscode/
+
+### Environment
+.env
+.env.*
+!.env.example
