@@ -332,6 +332,8 @@ Jede Aufgabe, die eine Tabelle füllt, prüft ihre Schlüssel mit einem Test, de
 
 Alle hier stehenden Typen, Namen und Signaturen sind verbindlich. „Implementierung“ heißt: Die Aufgabe schreibt den Rumpf; die Signatur bleibt. Wo ein vollständiger Rumpf angegeben ist, wird er so übernommen. Alle Typen sind `internal` (Standard), Test-Target nutzt `@testable import Planktrainer`. Durch Default-Isolation `MainActor` ist alles ohne Annotation MainActor-isoliert; `nonisolated` nur, wo hier angegeben.
 
+**Regel aus W0-T1 (verifiziert):** Typen, die aus nicht isoliertem Kontext benutzt werden – vor allem aus `LocalizedError.errorDescription` oder aus Autoclosures wie dem rechten Operanden von `??` –, müssen als `nonisolated` deklariert sein. Betroffen sind bisher `L10n`, `AppLocale` und `SessionConfiguration`. Wer in späteren Aufgaben einen neuen Typ in dieser Rolle anlegt, deklariert ihn ebenfalls `nonisolated` und meldet das im Bericht. Fremde Verträge werden dafür nicht geändert, sondern gemeldet.
+
 ### 4.1 Lokalisierung (W0-T1)
 
 `ios/Planktrainer/Core/Localization/LocalizationTable.swift` (vollständig):
@@ -353,13 +355,13 @@ enum LocalizationTable: String, CaseIterable, Sendable {
     case settings = "Settings"
 }
 
-enum AppLocale {
+nonisolated enum AppLocale {
     static var current: Locale {
         Locale(identifier: Bundle.main.preferredLocalizations.first ?? "en")
     }
 }
 
-enum L10n {
+nonisolated enum L10n {
     static func string(
         _ key: String.LocalizationValue,
         table: LocalizationTable,
@@ -544,7 +546,7 @@ enum ModelContainerFactory {
 
 ```swift
 // Core/Session/SessionConfiguration.swift (W0-T1)
-struct SessionConfiguration: Hashable, Sendable {
+nonisolated struct SessionConfiguration: Hashable, Sendable {
     static let plannedSecondsRange = 10...600
     static let preparationSecondsRange = 5...60
     static let stepSeconds = 5
