@@ -22,6 +22,7 @@ Die App soll Spaß machen und der Motivation dienen.
     - b) Eine größer gefasste Spezifikation, eventuell für Claude Code Design
 - Eine Lizenzbestimmung muss noch zum Repository hinzugefügt werden
 - Commits nach dem Convential Commits Style: https://www.conventionalcommits.org/en/v1.0.0/#specification
+- Ein Implementierungsplan soll erstmal nur Meilenstein 1 berücksichtigen, die Planung für anderen Meilensteine ist noch nicht abgeschlossen
 
 ## Technik
 
