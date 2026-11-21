@@ -277,7 +277,7 @@ Persistenz über `UserSettings` (`@Observable`, `UserDefaults`), Struktur nach `
 
 ### 3.12 Lokalisierung
 
-- Ein String Catalog (`Localizable.xcstrings`), Quellsprache Englisch, Übersetzungen Deutsch und Englisch.
+- Ein String Catalog pro Bereich (`<Bereich>.xcstrings`, z. B. `Training`, `Coach`), damit parallele Agenten konfliktfrei arbeiten; Quellsprache Englisch, Übersetzungen Deutsch und Englisch.
 - Ansagen, Coach-Sätze und Zeitformulierungen liegen ebenfalls im Catalog (Schlüssel z. B. `coach.demanding.filler.03`).
 - Die Sprache der Sprachausgabe folgt der aktiven App-Lokalisierung.
 
@@ -409,7 +409,8 @@ Bewusste Abweichungen von der Vorlage, wegen der Regeln zur Fehlerbehandlung:
 ## 6. Design
 
 - Das visuelle Design entsteht mit Claude Design auf Basis von `docs/spec/claude-design-brief.md`.
-- Ablauf: Claude Design arbeitet parallel zu den Logik-Wellen des Implementierungsplans. Die UI-Welle startet erst mit den Design-Ergebnissen (Tokens und Screens).
+- Ablauf: Claude Design arbeitet parallel zum Implementierungsplan. Die Screens entstehen zunächst mit Platzhalter-Tokens (Systemfarben und -textstile); eine eigene Welle arbeitet die Design-Ergebnisse (Tokens und Screens) danach ein.
+- Ablage der Design-Ergebnisse: `docs/design/`.
 
 ---
 
@@ -425,6 +426,7 @@ Siehe `CLAUDE.md`: Agenten-Workflow, Commits, Konventionen.
 |---|---|
 | Vorlage für SwiftData-Migrationen | geliefert (`docs/swift/database/`), eingearbeitet in 4.4 |
 | Gegenlesen der Coach-Texte (`announcement-phrases.md`) | Nutzer |
+| Gegenlesen der neuen UI-Texte (Tabellen der W2-Aufgaben im Plan) | Nutzer |
 | Design-Ergebnisse von Claude Design | Nutzer / Claude Design |
 
 ---
